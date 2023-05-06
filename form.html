@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="form.css">
+        <title>FORM</title>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2 class="text-center">EMPLOYEE REGISTRATION FORM</h2>
+            <form action="#" method="post "class="row g-2">
+                <!----First Line for name and bdate--->
+                <div class="col-md-7">
+                    <div class="fullname row g-2">
+                        <h6>Full name<span class="req">*</span></h6>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="firstName" required>
+                            <label for="firstName" class="form-label">First Name</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="lastName" required>
+                            <label for="lastName" class="form-label">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="bday row g-2">
+                        <h6>Birthdate<span class="req">*</span></h6>
+                        <div class="col">
+                            <input type="date" class="form-control" id="bday" required>
+                            <label for="bday" class="form-label">Date</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Line for email and phone number--->
+                <div class="email col-md-6">
+                    <h6>Email<span class="req">*</span></h6>
+                    <input type="email" class="form-control" id="email" placeholder="example@example.com"
+                    required>
+                </div>
+                <div class="col-md-6">
+                    <h6>Phone<span class="req">*</span></h6>
+                    <input type="phone" class="form-control" id="phone" required>
+                </div>
+
+                <!---Third line for address-->
+                <div class="col-md-12">
+                    <h6>Address<span class="req">*</span></h6>
+                    <input type="address" class="form-control" id="address" required>
+                    <label for="address" class="form-label">Street Address</label>
+                </div>
+                <!--fourth line street address-->
+                <div class="col-md-12">
+                    <input type="address" class="form-control" id="address2">
+                    <label for="address2" class="form-label">Street Address Line 2</label>
+                </div>
+                <!---5th / city and state or province---->
+                <div class="col-md-6">
+                    <input type="city" class="form-control" id="city" required>
+                    <label for="city" class="form-label">City</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="stateprovince" class="form-control" id="stateprovince" required>
+                    <label for="city" class="form-label">State / Province </label>
+                </div>
+                <!--6th / postal or zipcode-->
+                <div class="col-md-12">
+                    <input type="postalzip" class="form-control" id="postalzip" required>
+                    <label for="postalzip" class="form-label">Postal / Zip Code</label>
+                </div>   
+        
+                <hr class="hr" />
+                <!--7th applying position-->
+                <h6>Applying Position<span class="req">*</span></h6>
+                <div class="col-md-12">
+                    <input type="position" class="form-control" id="position" required>
+                </div>
+                <!---8th radio buttons--->
+                <hr class="hr" />
+                <h6>Type of Work<span class="req">*</span></h6>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="permanent" checked>
+                        <label class="form-check-label" for="permanent">
+                          Permanent
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="both">
+                        <label class="form-check-label" for="both">
+                          Both
+                        </label>
+                      </div>                
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="temporary">
+                        <label class="form-check-label" for="temporary">
+                          Temporary
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="other">
+                        <label class="form-check-label" for="other">
+                          Other
+                        </label>
+                    </div>
+                </div>    
+                
+                <!--9th file upload-->
+
+                <div class="resume col-md-12">
+                    <h6>Please Upload Resume<span class="req">*</span></h6>
+                    <input class="form-control" type="file" id="formFile">
+                    <p>Note: pdf or docs file only.</p>
+                </div>
+                <!--10th / cover letter or additional--->
+                <div class="col-md-12">
+                    <h6>Cover Letter or Additional Information (optional)</h6>
+                    <textarea class="form-control" id="additional" rows="5"></textarea>
+                </div> 
+      
+                <hr class="hr" />
+                <!---11th radio buttons veterans--->
+                <h6>Veteran Status (Please select the option that describes your status the best)</h6>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="veteran" checked>
+                        <label class="form-check-label" for="veteran">
+                          I am a veteran
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="separatedV">
+                        <label class="form-check-label" for="separatedV">
+                          I am a recently separated veteran
+                        </label>
+                      </div>                
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="notVeteran">
+                        <label class="form-check-label" for="notVeteran">
+                          I am not a veteran
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="disabledV">
+                        <label class="form-check-label" for="disabledV">
+                          I am a special disabled veteran
+                        </label>
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="protectedV">
+                        <label class="form-check-label" for="protectedV">
+                          I am an other protected veteran
+                        </label>
+                    </div>
+                </div>  
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="prefNotAnswer">
+                        <label class="form-check-label" for="prefNotAnswer">
+                          Prefer not to answer
+                        </label>
+                    </div>
+                </div>
+               <!---12th Gender--->
+               <hr class="hr" />
+               <h6>Gender</h6>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="female" checked>
+                       <label class="form-check-label" for="female">
+                         Female
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-6">
+                     <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="transF">
+                       <label class="form-check-label" for="transF">
+                         Transgender Female
+                       </label>
+                     </div>                
+               </div>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="notAnswerG">
+                       <label class="form-check-label" for="notAnswerG">
+                         Prefer not to answer
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="male">
+                       <label class="form-check-label" for="male">
+                         Male
+                       </label>
+                   </div>
+               </div> 
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="transM">
+                       <label class="form-check-label" for="transM">
+                         Transgender Male
+                       </label>
+                   </div>
+               </div>  
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault2" id="notListed">
+                       <label class="form-check-label" for="notListed">
+                         Not listed
+                       </label>
+                   </div>
+               </div>           
+               <hr class="hr" />                 
+               <!---13th Gender--->
+               <h6>Disabilities</h6>
+               <div class="col-md-12">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="noDisability" checked>
+                       <label class="form-check-label" for="noDisability">
+                         I have no disability
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-12">
+                     <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="twoOrMore">
+                       <label class="form-check-label" for="twoOrMore">
+                         I have two or more impairments and/or disabling medical conditions.
+                       </label>
+                     </div>                
+               </div>
+               <div class="col-md-12">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="SLD">
+                       <label class="form-check-label" for="SLD">
+                         I have a Specific Learning Difficulty (e.g. Dyslexia/Dyspraxia/AD(H)D)
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-12">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="socialComm">
+                       <label class="form-check-label" for="socialComm">
+                         I have a social/communication impairment such as Asperger's syndrome/other autistic 
+                         spectrum disorder
+                       </label>
+                   </div>
+               </div> 
+               <div class="col-md-12">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="longStanding">
+                       <label class="form-check-label" for="longStanding">
+                         I have a long standing illness or health condition such as cancer, 
+                         HIV, diabetes, chronic heart disease, or epilepsy
+                       </label>
+                   </div>
+               </div>  
+               <div class="col-md-12">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault3" id="physical">
+                       <label class="form-check-label" for="physical">
+                         I have a physical impairment or mobility issues (e.g. difficulty using arms/ 
+                         using a wheelchair or crutches)
+                       </label>
+                   </div>
+               </div>
+               <div class="col-md-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="deaf">
+                        <label class="form-check-label" for="deaf">
+                            I am deaf or have a serious hearing impairment
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="blind">
+                        <label class="form-check-label" for="blind">
+                            I am blind or have a serious visual impairment uncorrected by glasses
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="noAnswer">
+                        <label class="form-check-label" for="noAnswer">
+                            Prefer not to answer
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault3" id="notListed1">
+                        <label class="form-check-label" for="notListed1">
+                            I have a disability, impairment or medical condition not listed here. 
+                        </label>
+                    </div>
+                </div>
+                <div class="hiddenfield col-md-12">
+                    <input type="text" class="form-control" id="hidden_field" placeholder="Please specify your medical condition"
+                    name="hidden" required>
+                </div>
+                <hr class="hr" />
+                <!---14th Race--->
+               <h6>Race</h6>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault4" id="american" checked>
+                       <label class="form-check-label" for="american">
+                         American Native or Alaska Native 
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-6">
+                     <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault4" id="blackAfrican">
+                       <label class="form-check-label" for="blackAfrican">
+                         Black or African American
+                       </label>
+                     </div>                
+               </div>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault4" id="white">
+                       <label class="form-check-label" for="white">
+                         White
+                       </label>
+                     </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault4" id="decline">
+                       <label class="form-check-label" for="decline">
+                         Decline to specify
+                       </label>
+                   </div>
+               </div> 
+               <div class="col-md-6">
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="flexRadioDefault4" id="asian">
+                       <label class="form-check-label" for="asian">
+                         Asian
+                       </label>
+                   </div>
+               </div>  
+               <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="islander">
+                        <label class="form-check-label" for="islander">
+                            Native Hawaiian or Other Pacific Islander
+                        </label>
+                    </div>
+                </div>   
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="moreRaces">
+                        <label class="form-check-label" for="moreRaces">
+                            Two or more races
+                        </label>
+                    </div>
+                </div>   
+                <div class="col-md-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault4" id="other">
+                        <label class="form-check-label" for="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+                <hr class="hr" />
+                <!--15th additional notes--->
+                <div class="col-md-12">
+                    <h6>Additional Notes (optional)</h6>
+                    <textarea class="form-control" id="additional" rows="5"></textarea>
+                </div> 
+                <!--Button-->
+                <div class="col">
+                    <button class="submit btn-primary" onclick="javascript:alert('Form submitted successfully!')" type="button" value="Submit">Submit</button>
+                </div>
+                <div class="col">
+                    <input class="reset btn-primary" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+        <script src="js/signup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script>
+            function submit(){
+                alert("Form submitted successfully!");
+            }
+            
+            const checkbox = document.getElementById('notListed1');
+            const box = document.getElementById('hidden_field');
+
+            function handleRadioClick() {
+                if (document.getElementById('notListed1').checked) {
+                  box.style.display = 'block';
+                } else {
+                  box.style.display = 'none';
+                }
+              }
+              const radioButtons = document.querySelectorAll('input[name="flexRadioDefault3"]');
+              radioButtons.forEach(radio => {
+                radio.addEventListener('click', handleRadioClick);
+              });
+        </script>
+    </body>
+</html>

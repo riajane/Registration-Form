@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+body {
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
+  }
+  h2 {
+    color: #272343;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  h6{
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .container{
+    background:#eff0f3;
+    border: 3px solid #272343;
+    padding: 30px;
+    width: 75%;
+    margin-bottom: 50px;
+    border-top: 30px solid #272343;;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 0;
+  }
+
+  .req {
+    color: red;
+  }
+
+  p{
+    font-style: italic;
+    font-size: small;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  input{
+    height: 30px;
+  }
+
+  .form-control{
+    background: #fffffe;
+    border: 3px solid #272343;
+    border-radius: 5px;
+  }
+
+  .form-control:focus {
+    border: 3px solid #272343;
+  }
+
+  input[type=radio]:checked{
+    background: #272343;
+  }
+
+  input[type=radio]{
+    border: solid 2px #272343;
+  }
+
+  label{
+    color: #2d334a;
+    font-size: small;
+    margin-left: 3px;
+  }
+
+  .submit{
+    background:#272343;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    height: 40px;
+    border: solid 2px #272343;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fffffe;
+  }
+
+  .reset{
+    background:#fffffe;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    height: 40px;
+    border: solid 2px #272343;
+    font-weight: 600;
+    margin-top: 10px;
+    float: right;
+  }
+
+  .resume {
+    border: 3px #272343;
+    border-style: dashed;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  input[type=file]{
+    height: 40px;
+  }
+
+  input[type=position]{
+    margin-bottom: 10px;
+  }
+
+  #additional{
+    margin-bottom: 15px;
+  }
+
+  #hidden_field {
+    display: none;
+    width: 50%;
+    background-color: #fffffe;
+    color: #272343;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  input::placeholder{
+    font-size: small;
+    font-style: italic;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {  
+    .container {
+      width: 100%;
+      margin: 0 !important;
+      justify-content: center;
+      border-radius: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {  
+    .container {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {  
+    .container {
+      width: 100%;
+    }
+  }
